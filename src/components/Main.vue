@@ -5,26 +5,11 @@
     </div>
     <div class="container-main-blue">
       <ul>
-        <li>
-          <img src="@/assets/digital.png" alt="assets">
-          <span>Digital Comics</span>
+        <li v-for="(card, index) in cards" :key="index">
+          <img src="" alt="assets">
+          <span> {{ card.text }} </span>
         </li>
-        <li>
-          <img src="@/assets/merch.png" alt="assets">
-          <span>Digital Comics</span>
-        </li>
-        <li>
-          <img src="@/assets/sub.png" alt="assets">
-          <span>Digital Comics</span>
-        </li>
-        <li>
-          <img src="@/assets/shop.png" alt="assets">
-          <span>Digital Comics</span>
-        </li>
-        <li>
-          <img src="@/assets/pow.svg" alt="assets">
-          <span>Digital Comics</span>
-        </li>
+        
       </ul>
     </div>
   </div>
@@ -34,7 +19,35 @@
 <script>
 export default {
   name: 'Main',
+  data() {
+    return {
+      cards: [
+        {
+          image:'@/assets/digital.png',
+          text:'Digital Comics'
+        },
+        {
+          image:'@/assets/merch.png',
+          text:'dc merchandise'
+        },
+        {
+          image:'@/assets/sub.png',
+          text:'Sebscription'
+        },
+        {
+          image:'@/assets/shop.png',
+          text:'Comic shop'
+        },
+        {
+          image:'@/assets/pow.svg',
+          text:'Dc power visa'
+        },
+      ]
+    }
+  }
 }
+
+
 </script>
 
 
