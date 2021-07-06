@@ -26,8 +26,8 @@ export default {
 
 <style scoped>
   .container {
-    height: 100px;
-    line-height: 100px;
+    height: 120px;
+    line-height: 120px;
   }
 
   img {

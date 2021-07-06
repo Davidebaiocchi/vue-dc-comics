@@ -27,4 +27,7 @@ export default {
     margin: 0;
     border: 0;
   }
+  ul {
+    list-style: none;
+  }
 </style>
