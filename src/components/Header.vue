@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <img src="@/assets/dc-logo.png" alt="Logo Dc">
+    <img src="img/dc-logo.png" alt="Logo Dc">
     <ul> 
       <li v-for="(link, index) in links" :key="index"><a href="link.url" :class="{ active: link.current }"> {{ link.text }} </a></li>
     </ul>

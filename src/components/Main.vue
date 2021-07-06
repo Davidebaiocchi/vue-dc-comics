@@ -6,10 +6,9 @@
     <div class="container-main-blue">
       <ul>
         <li v-for="(card, index) in cards" :key="index">
-          <img src="" alt="assets">
+          <img :src="card.image" alt="">
           <span> {{ card.text }} </span>
-        </li>
-        
+        </li> 
       </ul>
     </div>
   </div>
@@ -23,23 +22,23 @@ export default {
     return {
       cards: [
         {
-          image:'@/assets/digital.png',
+          image:'img/digital.png',
           text:'Digital Comics'
         },
         {
-          image:'@/assets/merch.png',
+          image:'img/merch.png',
           text:'dc merchandise'
         },
         {
-          image:'@/assets/sub.png',
+          image:'img/sub.png',
           text:'Sebscription'
         },
         {
-          image:'@/assets/shop.png',
+          image:'img/shop.png',
           text:'Comic shop'
         },
         {
-          image:'@/assets/pow.svg',
+          image:'img/power.svg',
           text:'Dc power visa'
         },
       ]
