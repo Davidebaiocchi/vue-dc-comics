@@ -71,7 +71,8 @@ export default {
 </script>
 
 
-<style scoped>
+<style lang="scss" scoped>
+@import '@/style/vars.scss';
   .container {
     height: 120px;
     line-height: 120px;
@@ -96,7 +97,7 @@ export default {
   }
 
   li:active {
-    border-bottom: 5px solid rgb(0, 132, 255);
+    border-bottom: 5px solid $blue;
   }
 
   a {
@@ -109,6 +110,6 @@ export default {
   }
 
   a:hover {
-    color: rgb(0, 132, 255);
+    color: $blue;
   }
 </style>

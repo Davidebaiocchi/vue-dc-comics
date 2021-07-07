@@ -3,7 +3,7 @@
   <div class="container-main">
 
     <div class="jumbotron">
-      <img src="img/jumbotron2.jpg" alt="">
+      <!-- <img src="img/jumbotron2.jpg" alt=""> -->
     </div>
 
     <div class="container-fumetti">
@@ -59,7 +59,8 @@ export default {
 
 
 // -------------------------------------------------------CSS----------------------------------------------------
-<style scoped>
+<style lang="scss" scoped>
+@import '@/style/vars.scss';
 
   .container {
     background-color: black;
@@ -99,10 +100,12 @@ export default {
     text-transform: uppercase;
   }
 
-  .jumbotron img{
-    display: block;
+  .jumbotron{
+    background-image: url(../assets/jumbotron.jpg);
+    background-repeat: no-repeat;
     height: 500px;
     width: 100%;
+    background-size: cover;
   }
 
   .container-fumetti {
@@ -140,12 +143,11 @@ export default {
 
   .first-row {
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 130px;
     margin-left: 30px;
   }
 
   .second-row {
-    margin-top: 50px;
     margin-left: 30px;
     margin-bottom: 100px;
   }
@@ -164,7 +166,7 @@ export default {
 
   button {
     color: white;
-    background-color: rgb(0, 132, 255);
+    background-color: $blue;
     cursor: pointer;
     font-weight: 800;
     font-size: 21px;

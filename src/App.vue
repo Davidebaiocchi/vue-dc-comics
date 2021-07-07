@@ -22,6 +22,7 @@ export default {
 </script>
 
 <style lang="scss">
+  @import 'style/vars.scss';
   * {
     box-sizing: border-box;
     margin: 0;
