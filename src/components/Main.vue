@@ -3,7 +3,7 @@
   <div class="container-main">
 
     <div class="jumbotron">
-      <img src="img/jumbotron.jpg" alt="">
+      <img src="img/jumbotron2.jpg" alt="">
     </div>
 
     <div class="container-fumetti">
@@ -60,6 +60,7 @@ export default {
 
 // -------------------------------------------------------CSS----------------------------------------------------
 <style scoped>
+
   .container {
     background-color: black;
     color: white;
@@ -100,7 +101,7 @@ export default {
 
   .jumbotron img{
     display: block;
-    height: 800px;
+    height: 500px;
     width: 100%;
   }
 
@@ -125,6 +126,16 @@ export default {
   .container-fumetti li {
     width: 270px;
     margin: 10px;
+  }
+
+  li:hover {
+    color: red;
+    scale: 1.3;
+  }
+
+  li:hover span{
+    color: black;
+    font-weight: 800;
   }
 
   .first-row {
@@ -159,7 +170,12 @@ export default {
     font-size: 21px;
     position: absolute;
     padding: 15px;
-    top: 776px;
+    top: 470px;
     left: 15%;
+  }
+
+  button:hover {
+    color: black;
+    background-color: red;
   }
 </style>
