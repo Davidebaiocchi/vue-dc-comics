@@ -75,22 +75,24 @@ export default {
   .container {
     height: 120px;
     line-height: 120px;
+    position: fixed;
+    display: flex;
+    background-color: white;
+    width: 100%;
+    z-index: 1;
   }
 
   img {
     height: 100%;
     padding: 10px 0;
     margin-left: 300px;
+    margin-right: 300px;
   }
 
   ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    position: absolute;
-    top: 0;
-    right: 250px;
-    height: 120px;
   }
 
   li:active {
